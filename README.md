@@ -16,7 +16,7 @@ To see whether the AOV was dependent on who was buying the shoes, rather than th
 </p>
 
 
-Finally, I calculated the AOV separately for new vs returning customers, and found them to be $297.68 and $302.90 respectively, indicating that the amount a customer spends does not depend on if they’ve previously bought shoes through a Shopify store.
+Finally, I calculated the AOVs separately for new vs returning customers, and found them to be $297.68 and $302.90 respectively. When compared to the cost of a pair of shoes, the difference in these two numbers is neglibile, and so it seems that the AOV is independent of whether a customer has prevoiusly bought shoes on Shopify. 
 
 
 ## Question 2
