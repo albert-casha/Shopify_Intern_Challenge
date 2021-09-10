@@ -6,13 +6,13 @@ The main issue with the calculation is that there is no filtering of the data. L
 I think it is still useful to know the AOV of all the sneaker shops, which I calculated to be $302.58. However, I think it would be more informative to see how the AOV changes per store. Rather than list 98 numbers, I created a histogram showing the AOV distribution. As seen, people typically spend between $250-$350, with the median value consistent with the combined AOV for all stores.
 
 <p align="center">
-<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV_per_Shop.png" width=50% height=50%/>
+<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV%20per%20Shop.png" width=50% height=50%/>
 </p>
 
 To see whether the AOV was dependent on who was buying the shoes, rather than the store selling them, I also plotted the AOV per customer (assuming that the user_id is consistent across stores). A similar trend emerges, where customers are most likely to spend between $250 - $350, and unlikely to spend more than $400 in a single transaction. 
 
 <p align="center">
-<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV_per_Shop.png" width=50% height=50%/>
+<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV%20per%20Customer.png" width=50% height=50%/>
 </p>
 
 
