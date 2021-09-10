@@ -20,6 +20,7 @@ Finally, I calculated the AOVs separately for new vs returning customers, and fo
 
 
 ## Question 2
+The queries for these are available in this repository, but I also uploaded my answers as a PDF with the queries included if that's easier
 
 ### a.	How many orders were shipped by Speedy Express in total?
 
