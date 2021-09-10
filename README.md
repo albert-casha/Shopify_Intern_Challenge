@@ -9,6 +9,14 @@ I think it is still useful to know the AOV of all the sneaker shops, which I cal
 <img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV_per_Shop.png" width=50% height=50%/>
 </p>
 
+To see whether the AOV was dependent on who was buying the shoes, rather than the store selling them, I also plotted the AOV per customer (assuming that the user_id is consistent across stores). A similar trend emerges, where customers are most likely to spend between $250 - $350, and unlikely to spend more than $400 in a single transaction. 
+
+<p align="center">
+<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV_per_Shop.png" width=50% height=50%/>
+</p>
+
+
+Finally, I calculated the AOV separately for new vs returning customers, and found them to be $297.68 and $302.90 respectively, indicating that the amount a customer spends does not depend on if they’ve previously bought shoes through a Shopify store.
 
 
 ## Question 2
