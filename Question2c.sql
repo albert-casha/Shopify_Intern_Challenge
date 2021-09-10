@@ -1,19 +1,22 @@
-SELECT german_orders.OrderID,
-       details.ProductID,
+SELECT details.ProductID,
        details.Quantity,
        details.ProductName,
        COUNT(details.Quantity) as Number_of_orders,
        SUM(details.Quantity) as total_quantity
-FROM (SELECT orders.*, customers.*
-	FROM Orders as orders
-	JOIN Customers as customers
- 	ON orders.CustomerID = customers.CustomerID
-	WHERE customers.Country = 'Germany'
+FROM (SELECT Orders.OrderID
+	FROM Orders
+	JOIN Customers
+ 	ON Orders.CustomerID = Customers.CustomerID
+	WHERE Customers.Country = 'Germany'
     ) german_orders
-LEFT JOIN (Select orderdetails.*, products.*
-           FROM Orderdetails as orderdetails
-           JOIN Products as products
-           ON orderdetails.ProductID = products.ProductID) details
+LEFT JOIN (Select Orderdetails.OrderID, 
+	   Orderdetails.ProductID, 
+	   Orderdetails.Quantity, 
+	   Products.ProductID, 
+	   Products.ProductName
+           FROM Orderdetails
+           JOIN Products
+           ON Orderdetails.ProductID = Products.ProductID) details
 ON german_orders.OrderID = details.OrderID
 GROUP BY ProductID
 ORDER BY total_quantity DESC
