@@ -1,17 +1,26 @@
 # Shopify_Intern_Challenge
+ ## Question 1
 
-![](figures/AOV_per_Shop.png)
+The main issue with the calculation is that there is no filtering of the data. Looking at the dataset, there are two stores that are outliers: Store 42, where every order is for 2000 pairs of shoes, and Store 78, where the price per item is $25725. If possible, I would first investigate these two stores further, to see if the data has been corrupted somehow, or if these are just non-traditional shoe stores. In any case, the data from these two stores should not be included in this assessment, and so must be filtered out.
 
-Question 2
+I think it is still useful to know the AOV of all the sneaker shops, which I calculated to be $302.58. However, I think it would be more informative to see how the AOV changes per store. Rather than list 98 numbers, I created a histogram showing the AOV distribution. As seen, people typically spend between $250-$350, with the median value consistent with the combined AOV for all stores.
 
-a.	How many orders were shipped by Speedy Express in total?
+<p align="center">
+<img src="https://github.com/albert-casha/Shopify_Intern_Challenge/blob/main/figures/AOV_per_Shop.png" width=50% height=50%/>
+</p>
+
+
+
+## Question 2
+
+### a.	How many orders were shipped by Speedy Express in total?
 
 Speedy Express shipped 54 orders.
 
-b.	What is the last name of the employee with the most orders?
+### b.	What is the last name of the employee with the most orders?
 
 The last name of the employee with the most orders is Peacock.
 
-c.	What product was ordered the most by customers in Germany?
+### c.	What product was ordered the most by customers in Germany?
 
 The product that was ordered the most was Boston Crab Meat, with 160 units shipped over 4 orders. However, the product with the most orders, regardless of total quantity sold, was Gorgonzola Telino with 5 orders placed.
