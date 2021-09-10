@@ -3,7 +3,8 @@
 
 
 Question 2
- a.	How many orders were shipped by Speedy Express in total?
+
+a.	How many orders were shipped by Speedy Express in total?
 
 Speedy Express shipped 54 orders.
 
