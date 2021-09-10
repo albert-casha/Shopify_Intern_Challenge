@@ -5,9 +5,6 @@ import datetime as dt
 
 filename = '2019_Winter_Data_Science_Intern_Challenge_Data_Set.csv'
 
-order_amount = 0
-n_orders = 0
-
 #Define dictionaries and lists to store the data
 amount_per_shop = {}
 amount_per_user = {}
@@ -22,10 +19,6 @@ with open(filename) as csvfile:
 		#Filter out corrupted/not applicable data
 		if float(row['order_amount']) > 10000:
 			continue
-
-		# Counters for the total order value and number of orders
-        	order_amount += float(row['order_amount'])
-	        n_orders += 1
 
 	        #Record the value of transactions and number of orders as a function of the shop
 		if(row['shop_id'] in amount_per_shop):
@@ -63,20 +56,20 @@ with open(filename) as csvfile:
   		        # If this is the first transaction by the user in the dataset, add the order value and timestamp
   			first_trans[row['user_id']] = [ float(row['order_amount']), datetime ]
 
-# Calculate the AOV for the entire dataset
-AOV = order_amount/n_orders
-print 'AOV: ', AOV
-
 #Calculate the AOV for first time customers
-first_AOV = 0
+sum_of_first_AOV = 0
 for key in first_trans.keys():
-	first_AOV += first_trans[key][0]
-first_AOV = first_AOV/len(first_trans.keys())
+	sum_of_first_AOV += first_trans[key][0]
+first_AOV = sum_of_first_AOV/len(first_trans.keys())
 print "first_AOV: ", first_AOV
 
 # Calculate AOV for repeat customers
 repeat_AOV = sum(repeat_trans)/len(repeat_trans)
 print "repeat_AOV: ", repeat_AOV
+
+# Calculate the AOV for the entire dataset
+AOV = (sum_of_first_AOV + sum(repeat_trans))/(len(first_trans.keys()) + len(repeat_trans))
+print "AOV: ", AOV
 
 # Calculate the AOV as a function of store/customer and produce a histogram
 def AOV_hist(order_amounts, number_of_orders, title, nbins):
