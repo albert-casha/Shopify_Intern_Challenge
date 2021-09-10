@@ -6,12 +6,13 @@ import datetime as dt
 filename = '2019_Winter_Data_Science_Intern_Challenge_Data_Set.csv'
 
 #Define dictionaries and lists to store the data
-amount_per_shop = {}
-amount_per_user = {}
-orders_per_shop = {}
-orders_per_user = {}
-first_trans = {}
-repeat_trans = []
+
+amount_per_shop = {} # Dictionary to record the total value of transactions per shop
+amount_per_user = {} # Dictionary to record the total value of transactions per user
+orders_per_shop = {} # Dictionary to record the number of orders placed at each shop
+orders_per_user = {} # Dictionary to record the number of orders placed by each user
+first_trans = {}     # Dictionary to record the first transaction placed by each user
+repeat_trans = []    # List of any repeat transactions by any user
 
 with open(filename) as csvfile:
 	csv_reader = csv.DictReader(csvfile, delimiter=',')
