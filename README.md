@@ -1,6 +1,6 @@
 # Shopify_Intern_Challenge
 
-!(figures/AOV_per_Shop.png)
+![](figures/AOV_per_Shop.png)
 
 Question 2
 
