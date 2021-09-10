@@ -1,7 +1,7 @@
 # Shopify_Intern_Challenge
  ## Question 1
 
-The main issue with the calculation is that there is no filtering of the data. Looking at the dataset, there are two stores that are outliers: Store 42, where every order is for 2000 pairs of shoes, and Store 78, where the price per item is $25725. It seems likely to me that Store 42 is a wholesale retailer, and the data from Store 78 is likely missing a decimal point. If possible, I would investigate these two stores further, to try and validate these assumptions. Given the limited amount of information here, the data from these two stores should not be included in this assessment, and so must be filtered out.
+The main issue with the calculation is that there is no filtering of the data. Looking at the dataset, there are two stores that are outliers: Store 42, where every order is for 2000 pairs of shoes, and Store 78, where the price per item is $25725. It seems likely to me that Store 42 is a wholesale retailer, and the data from Store 78 is likely missing a decimal point. If possible, I would investigate these two stores further, to try and validate these assumptions. However, given the limited amount of information here, the data from these two stores should not be included in this assessment, and so must be filtered out.
 
 I think it is still useful to know the AOV of all the sneaker shops, which I calculated to be $302.58. However, I think it would be more informative to see how the AOV changes per store. Rather than list 98 numbers, I created a histogram showing the AOV distribution. As seen, people typically spend between $250-$350, with the median value consistent with the combined AOV for all stores.
 
